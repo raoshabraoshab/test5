@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JEE Quiz Portal</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>JEE Quiz Portal</h1>
+      <p class="tagline">Fast. Focused. Exam-ready.</p>
+    </header>
+
+    <section id="join">
+      <h2>Join a Quiz</h2>
+      <div class="row">
+        <input id="name" placeholder="Your name"/>
+        <select id="quizList"></select>
+        <button id="startBtn">Start</button>
+      </div>
+      <small id="status"></small>
+    </section>
+
+    <section id="quiz" class="hidden">
+      <div class="topbar">
+        <div id="quizTitle"></div>
+        <div id="timer"></div>
+      </div>
+      <div id="questionContainer"></div>
+      <div class="actions">
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+        <button id="submitBtn">Submit</button>
+      </div>
+    </section>
+
+    <section id="result" class="hidden">
+      <h2>Result</h2>
+      <div id="resultSummary"></div>
+      <button id="restartBtn">Back to Home</button>
+    </section>
+
+    <footer>
+      <small>Built for JEE practice • Minimal demo stack</small>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
